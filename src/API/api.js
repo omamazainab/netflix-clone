@@ -9,7 +9,7 @@ import {
     top_rated,
     fantasy,
     upcoming
-} from '../request'
+} from './request'
 
 export const MovieType = {
     TRENDING: {

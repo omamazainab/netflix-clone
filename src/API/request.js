@@ -13,4 +13,4 @@ export const fantasy = `${baseUrl}/discover/movie?api_key=${API_KEY}&with_genres
 export const romance = `${baseUrl}/discover/movie?api_key=${API_KEY}&with_genres=10749`
 export const thriller = `${baseUrl}/discover/movie?api_key=${API_KEY}&with_genres=53`
 
-
+export const baseImgUrl = 'https://image.tmdb.org/t/p/original'

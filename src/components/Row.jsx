@@ -3,7 +3,7 @@ import { fetchMovies } from "../API/api";
 import { baseImgUrl } from "../API/request";
 import "../styles/row.css";
 
-const Row = ({ title, url }) => {
+const Row = ({ title, url, isLargeRow }) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -22,11 +22,12 @@ const Row = ({ title, url }) => {
         {movies.map((movie) => {
           return (
             <img
-            key={movie.id}
-              className="movie-poster"
-              src={`${baseImgUrl}${movie.poster_path}`}
+              key={movie.id}
+              className={`movie-poster ${isLargeRow ? 'large-poster' : ''}`}
+              src={`${baseImgUrl}${
+                isLargeRow ? movie.poster_path : movie.backdrop_path
+              }`}
               alt={movie.title}
-              
             />
           );
         })}

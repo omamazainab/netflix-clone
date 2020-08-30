@@ -8,10 +8,11 @@ function App() {
 
   return (
     <div className="App">
-      netflix clone
+      
       <Row
         title={MovieType.NETFLIXORIGINALS.title}
         url={MovieType.NETFLIXORIGINALS.url}
+        isLargeRow={true}
       />
       <Row
         title={MovieType.TRENDING.title}

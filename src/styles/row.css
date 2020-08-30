@@ -1,3 +1,7 @@
+.row{
+    margin-left: 20px;
+}
+
 .movie-posters-slider {
     display: flex;
     overflow-y: hidden;
@@ -13,12 +17,22 @@
     width: 100%;
     max-height: 100px;
     object-fit: contain;
-    transition-timing-function: cubic-bezier(1, -0.6, 0.58, 1);
+    transition-timing-function: ease-out;
     transition-duration: 0.3s;
     margin-right: 10px;
+    user-select: none;
 }
 
 .movie-poster:hover {
     opacity: 1;
     transform: scale(1.09);
+    user-select: none;
+}
+
+.large-poster{
+    max-height: 250px;
+}
+
+.large-poster:hover{
+    transform: scale(1.1);
 }

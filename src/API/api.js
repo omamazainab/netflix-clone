@@ -30,7 +30,7 @@ export const MovieType = {
     },
     ACTION: {
         title: 'action',
-        url: Action
+        url: Action 
     },
     ROMANCE: {
         title: 'romance',

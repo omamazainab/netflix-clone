@@ -14,7 +14,7 @@ const Row = ({ title, url, isLargeRow }) => {
     api();
   }, [url]);
 
-  console.table(movies);
+  
   return (
     <div className="row">
       <h3 className="movie-type-heading">{title}</h3>

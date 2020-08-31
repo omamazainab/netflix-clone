@@ -1,5 +1,7 @@
 import React from 'react';
 import Row from './components/Row'
+import Banner from './components/Banner'
+import Nav from './components/Nav'
 
 import './App.css';
 import { MovieType } from './API/api';
@@ -8,7 +10,8 @@ function App() {
 
   return (
     <div className="App">
-      
+      <Nav/>
+      <Banner />
       <Row
         title={MovieType.NETFLIXORIGINALS.title}
         url={MovieType.NETFLIXORIGINALS.url}

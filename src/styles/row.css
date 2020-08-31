@@ -36,3 +36,7 @@
 .large-poster:hover{
     transform: scale(1.1);
 }
+
+.movie-type-heading{
+    color: white;
+}

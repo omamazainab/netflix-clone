@@ -5,3 +5,16 @@
 .App{
   background-color: #111;
 }
+
+.footer{
+  width: 100%;
+  color: white;
+  background: #111;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.footer>a{
+  color:white;
+  text-decoration: none;
+}

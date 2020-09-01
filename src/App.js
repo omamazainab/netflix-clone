@@ -2,6 +2,7 @@ import React from 'react';
 import Row from './components/Row'
 import Banner from './components/Banner'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 import './App.css';
 import { MovieType } from './API/api';
@@ -57,6 +58,7 @@ function App() {
         title={MovieType.THRILLER.title}
         url={MovieType.THRILLER.url}
       />
+      <Footer />
     </div>
   );
 }

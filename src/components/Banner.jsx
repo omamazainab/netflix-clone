@@ -16,7 +16,7 @@ const Banner = () => {
     }
     api();
   }, []);
-  console.log(movie);
+
 
   return (
     <header
@@ -29,7 +29,7 @@ const Banner = () => {
     >
       <div className="banner-container">
         <h1 className="banner-title">
-          {movie?.title || movie?.name || movie.original_name}
+          {movie?.title || movie?.name || movie?.original_name}
         </h1>
         <div className="banner-buttons">
           <button className="banner-button">Play</button>
